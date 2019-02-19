@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body { background: url(https://i.pinimg.com/originals/59/7a/27/597a2779907281f9bcb83c053f011e17.jpg); }
+    </style>
+
+</head>
+<body>
+<h1>Concert Calendar</h1>
+
+
+<h3><i><li data-th-each="item : ${items}">
+        <a data-th-href="@{/{id}(id=${item.id})}">
+            [[${item.name}]]
+        </a>
+    </li></i></h3>
+
+<h3><p data-th-if="${items.size() == 0}" class="no-items"><i>No upcoming concerts</i></p></h3>
+
+<p><button><a data-th-href="@{/0/edit}">Add</a></button></p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body { background: url(https://i.pinimg.com/originals/59/7a/27/597a2779907281f9bcb83c053f011e17.jpg); }
+    </style>
+</head>
+<body>
+<form method="post">
+    <p><input placeholder="Name" name="name" data-th-value="${item.name}"></p>
+    <p><textarea placeholder="Description" name="description" data-th-value="${item.description}"></textarea></p>
+    <p><input name="price" data-th-value="${item.price}"></p>
+    <p><input placeholder="url" name="url" data-th-value="${item.url}"></p>
+    <button>Save</button>
+</form>
+</body>
+</html>

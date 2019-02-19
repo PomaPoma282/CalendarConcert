@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body { background: url(https://i.pinimg.com/originals/59/7a/27/597a2779907281f9bcb83c053f011e17.jpg); }
+    </style>
+</head>
+<body>
+
+<h1>[[${item.name}]]</h1>
+
+<p>[[${item.description}]]</p>
+<p>[[${item.price}]]</p>
+<p>[[${item.url}]]</p>
+
+<a data-th-href="@{/{id}/edit(id=${item.id})}">Edit</a>
+<a data-th-href="@{/{id}/remove(id=${item.id})}">Remove</a>
+
+</body>
+</html>
